@@ -1,0 +1,47 @@
+*{
+    width: 100%;
+}
+.title{
+
+    background-color: black;
+    color:white;
+    text-align: center;
+    
+}
+#ramen-menu{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 160px;
+    height: 300px;
+}
+#ramen-detail{
+    position: relative;
+    margin: auto;
+    width: 260px;
+    height: 400px;
+}
+#ramen-detail img {
+    width: 200%;
+    height: 100%;
+    
+    display: block;
+}
+#rameninfo{
+position: absolute;
+bottom: 0;
+text-align: start;
+background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+.ramen-name,
+.ramen-restaurant {
+  margin: 0;
+  color:white;
+  padding: 2px;
+}
+#rameninfo{
+
+}
+
+
