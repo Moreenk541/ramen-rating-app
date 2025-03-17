@@ -9,9 +9,17 @@
 <body>
     <h2 class="title">Ramen Rater</h2>
     <div id="ramen-menu">
-        <img src="" alt="">
+       
     </div>
     <div id="ramen-detail"></div>
+    <form id="ramenForm">
+        <input type="text" id="name" placeholder="Name"required>
+        <input type="text" id="restaurant" placeholder="restaurant" required>
+        <input type="text" id="url" placeholder="Image.URL" required>
+        <input type="number"  id="rate" placeholder="Ratings" max="5"min="1">
+         <textarea name="comment" rows="4" id="comment" placeholder="Write a comment"></textarea>
+         <input type="submit" value="Create">
+    </form>
     
 </body>
 <script src="index.js"></script>

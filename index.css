@@ -1,5 +1,6 @@
 *{
     width: 100%;
+    
 }
 .title{
 
@@ -8,24 +9,50 @@
     text-align: center;
     
 }
-#ramen-menu{
+#ramen-menu {
     display: flex;
-    align-items: center;
-    margin: auto;
-    width: 160px;
-    height: 300px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images horizontally */
+    gap: 10px; /* Add space between images */
+    margin: auto; /* Center the entire menu */
+    width: 100%; /* Full width to allow wrapping */
+    height: auto; /* Adjust height based on content */
 }
+
+#ramen-menu > img {
+    width: 200px; /* Adjusted size to fit more images in a row */
+    height: 150px;
+    object-fit: cover; /* Maintain aspect ratio and fill the area */
+    border-radius: 8px; /* Rounded corners for a nicer look */
+    margin: 5px; /* Space around each image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+#ramen-menu > img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
 #ramen-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    display: none;
     margin: auto;
     width: 260px;
     height: 400px;
 }
 #ramen-detail img {
+    
+
     width: 200%;
     height: 100%;
+    max-width: 100%; 
+    object-fit: cover;
     
-    display: block;
+    
 }
 #rameninfo{
 position: absolute;
@@ -33,6 +60,13 @@ bottom: 0;
 text-align: start;
 background-color: hsla(0, 0%, 0%, 0.6);
 }
+ .ramen-addedinfo {
+   
+    position: relative;
+    margin: 5px 0;
+    text-align: center;
+}
+
 
 .ramen-name,
 .ramen-restaurant {
@@ -40,8 +74,39 @@ background-color: hsla(0, 0%, 0%, 0.6);
   color:white;
   padding: 2px;
 }
-#rameninfo{
 
+#ramenForm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    margin: auto;
+    margin-top: 170px;
+    padding: 20px;
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
 }
 
 
